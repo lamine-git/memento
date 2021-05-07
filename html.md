@@ -7,8 +7,8 @@ Les balises de premier niveau sont les principales balises qui structurent une p
 
 #Balise	#Description
 
-'<html>'	Balise pricipale 
+'<'html'>'	Balise pricipale 
 
-'<head>'	En-tete de la page
+'<'head'>'	En-tete de la page
 
-'<body>'	Corps de la page
+'<'body'>'	Corps de la page
