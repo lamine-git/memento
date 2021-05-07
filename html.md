@@ -45,7 +45,7 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 ## Balises de structuration du texte
 
-### balise		Description
+### balise		### Description
 
 	<abbr>		Abreviation
 
@@ -57,8 +57,161 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<sub>		indice
 
-	<Strong>		Mise en valeur forte
+	<Strong>	Mise en valeur forte
 
 	<em>		Mise en valeur normal
+
+	<mark>	Mise en valeur visuelle
+
+	<h1>		Titre de niveau 1
+
+	<h2>		titre de niveau 2
+
+	<h3>		Titre de niveau 3
+
+	<h4>		Titre de niveau 4
+
+	<h5>		Titre de niveau 5
+
+	<h6>		Titre de niveau 6
+
+	<img />	image
+
+	<figure>	Figure (image, code, etc.)
+
+	<figcaption>	Description de la figure
+
+	<audio>	Son
+
+	<video>	Vidéo
+
+	<source>	Format source pour les balises <audio>
+
+	<a>		Lien hypertexte
+
+	<br />	Retour à la ligne
+
+	<p>		Paragraphe
+
+	<hr />	Ligne de separation horizontale
+
+	<address>	Adresse de contact
+
+	<del>		Texte supprimé
+
+	<ins>		Texte inséré
+
+	<dfn>		Definition
+
+	<kbd>		Saisie clavier
+
+	<pre>		Affichage formaté (pour les codes sources)
+
+	<progress>	Barre de progression
+
+	<time>	Date ou heure
+
+## Balises de listes
+
+cette section énumère toutes les balises HTML permettant de créer des listes (listes à puces, listes numerotées, listes de définitions...)
+
+### Balise		### Description
+
+	<ul>		liste à puces, non numérotée
+
+	<ol>		liste numérotéz
+
+	<li>		élément de la liste à puces
+
+	<dl>		Terme à définir
+
+	<dd>		Définition du terme
+
+## Balises de tableau
+
+### Balise		### Description
+
+	<table>	Tableau
+
+	<caption>	tire du tableau
+
+	<tr>		Ligne de tableau
+
+	<th>		Cellule d'en-tete
+
+	<td>		Cellule
+
+	<thead>	Section de l'en-tete du Tableau
+
+	<tbody>	Section du pied du tableau
+
+	<tfoot>	Section du pied du tableau
+
+
+## Balise de formulaire
+
+### Balise		### Description
+
+	<form>	Formulaire
+
+	<fieldset>	Groupe de champs
+
+	<legend>	Titre d'un groupe de champs
+
+	<label>	Libellé d'un champ
+
+	<input />	Champ de formulaire (texte, mot de passe, case à cocher, bouton, etc.)
+
+	<textarea>	Zone de saisie multiligne
+
+	<select>	Liste déroulante
+
+	<option>	Élément d'une liste déroulante
+
+	<optgroup>	Groupe d'éléments d'une liste déroulante
+
+## Balises sectionnantes
+
+Ces balises permettent de construire le squelette de notre site web.
+
+### Balise		### Description
+
+	<header>	En-tête
+
+	<nav>		Liens principaux de navigation
+
+	<footer>	Pied de page
+
+	<section>	Section de page
+
+	<article>	Article (contenu autonome)
+
+	<aside>	Informations complémentaires
+
+## Balises génériques
+
+Les balises génériques sont des balises qui n'ont pas de sens sémantique.
+
+En effet, toutes les autres balises HTML ont un sens : '<'p'>'  signifie « paragraphe », '<'h2'>'  signifie « sous-titre », etc.
+Parfois, on a besoin d'utiliser des balises génériques (aussi appelées *balises universelles*) car aucune des autres balises ne convient. On utilise le plus souvent des balises génériques pour construire son design.
+
+Il y a deux balises génériques : l'une est inline, l'autre est block.
+
+### Balise		### Description
+
+	<span>	Balise générique de type inline
+
+	<div>		Balise générique de type block
+
+Ces balises ont un intérêt uniquement si vous leur associez un attribut	class  , 	id  ou 	style  :
+
+* class  : indique le nom de la classe CSS à utiliser.
+
+* id  : donne un nom à la balise. Ce nom doit être unique sur toute la page car il permet d'identifier la balise. Vous pouvez vous servir de l'ID pour de nombreuses choses, par exemple pour créer un lien vers une ancre, pour un style CSS de type ID, pour des manipulations en JavaScript, etc.
+
+* style  : cet attribut vous permet d'indiquer directement le code CSS à appliquer. Vous n'êtes donc pas obligé d'avoir une feuille de style à part, vous pouvez mettre directement les attributs CSS. Notez qu'il est préférable de ne pas utiliser cet attribut et de passer à la place par une feuille de style externe, car cela rend votre site plus facile à mettre à jour par la suite.
+
+Ces trois attributs ne sont pas réservés aux balises génériques : vous pouvez aussi les utiliser sans aucun problème dans la plupart des autres balises.
+
 
 	
