@@ -26,3 +26,39 @@ Code minimal d'une page HTML:
     
     			</body>
 		</html>
+
+##Balises d'en-tête
+
+Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entre 	<head>  et 	</head>  :
+
+##balise	Description
+
+	<link/>	Liaison avec une feuille de style
+
+	<meta/>	Métadonnées de la page web (charset, mots-clés, etc.)
+
+	<script>	Code JavaScript
+
+	<style>	Code CSS
+
+	<title>	Titre de la page
+
+##Balises de structuration du texte
+
+###balise	Description
+
+	<abbr>	Abreviation
+
+	<blockquote>	Citation(longue)
+
+	<cite>	Citation du titre d'une oeuvre ou d'un evenement
+
+	<q>	Citation (courte)
+
+	<sub>    indice
+
+	<Strong>	Mise en valeur forte
+
+	<em>	Mise en valeur normal
+
+	
