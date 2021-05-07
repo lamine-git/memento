@@ -5,10 +5,10 @@ voici un petit condensé de balises html
 
 Les balises de premier niveau sont les principales balises qui structurent une page HTML. Elles sont indispensables pour réaliser le « code minimal » d'une page web.
 
-#Balise'	'#Description
+#Balise	#Description
 
-'<html>''	'Balise pricipale 
+'<html>'	Balise pricipale 
 
-'<head>''	'En-tete de la page
+'<head>'	En-tete de la page
 
-'<body>''	'Corps de la page
+'<body>'	Corps de la page
