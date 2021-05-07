@@ -5,7 +5,7 @@ voici un petit condensé de balises html
 
 Les balises de premier niveau sont les principales balises qui structurent une page HTML. Elles sont indispensables pour réaliser le « code minimal » d'une page web.
 
-# Balise	Description
+### Balise	Description
 
 '<'html'>'	Balise pricipale 
 
@@ -17,14 +17,14 @@ Code minimal d'une page HTML:
 
 	<!DOCTYPE html>
 		<html>
-    			<head>
-        			<meta charset="utf-8" />
-        			<title>Titre</title>
-    			</head>
+    		<head>
+        		<meta charset="utf-8" />
+        		<title>Titre</title>
+    		</head>
 
-    			<body>
+    		<body>
     
-    			</body>
+    		</body>
 		</html>
 
 ## Balises d'en-tête
@@ -33,19 +33,19 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 ### balise		Description
 
-	<link/>	Liaison avec une feuille de style
+	<link/>		Liaison avec une feuille de style
 
-	<meta/>	Métadonnées de la page web (charset, mots-clés, etc.)
+	<meta/>		Métadonnées de la page web (charset, mots-clés, etc.)
 
 	<script>	Code JavaScript
 
-	<style>	Code CSS
+	<style>		Code CSS
 
-	<title>	Titre de la page
+	<title>		Titre de la page
 
 ## Balises de structuration du texte
 
-### balise		### Description
+### balise		#### Description
 
 	<abbr>		Abreviation
 
@@ -61,7 +61,7 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<em>		Mise en valeur normal
 
-	<mark>	Mise en valeur visuelle
+	<mark>		Mise en valeur visuelle
 
 	<h1>		Titre de niveau 1
 
@@ -75,25 +75,25 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<h6>		Titre de niveau 6
 
-	<img />	image
+	<img />		image
 
 	<figure>	Figure (image, code, etc.)
 
 	<figcaption>	Description de la figure
 
-	<audio>	Son
+	<audio>		Son
 
-	<video>	Vidéo
+	<video>		Vidéo
 
 	<source>	Format source pour les balises <audio>
 
 	<a>		Lien hypertexte
 
-	<br />	Retour à la ligne
+	<br />		Retour à la ligne
 
 	<p>		Paragraphe
 
-	<hr />	Ligne de separation horizontale
+	<hr />		Ligne de separation horizontale
 
 	<address>	Adresse de contact
 
@@ -109,7 +109,7 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<progress>	Barre de progression
 
-	<time>	Date ou heure
+	<time>		Date ou heure
 
 ## Balises de listes
 
@@ -131,7 +131,7 @@ cette section énumère toutes les balises HTML permettant de créer des listes (li
 
 ### Balise		### Description
 
-	<table>	Tableau
+	<table>		Tableau
 
 	<caption>	tire du tableau
 
@@ -141,24 +141,24 @@ cette section énumère toutes les balises HTML permettant de créer des listes (li
 
 	<td>		Cellule
 
-	<thead>	Section de l'en-tete du Tableau
+	<thead>		Section de l'en-tete du Tableau
 
-	<tbody>	Section du pied du tableau
+	<tbody>		Section du pied du tableau
 
-	<tfoot>	Section du pied du tableau
+	<tfoot>		Section du pied du tableau
 
 
 ## Balise de formulaire
 
 ### Balise		### Description
 
-	<form>	Formulaire
+	<form>		Formulaire
 
 	<fieldset>	Groupe de champs
 
 	<legend>	Titre d'un groupe de champs
 
-	<label>	Libellé d'un champ
+	<label>		Libellé d'un champ
 
 	<input />	Champ de formulaire (texte, mot de passe, case à cocher, bouton, etc.)
 
@@ -186,7 +186,7 @@ Ces balises permettent de construire le squelette de notre site web.
 
 	<article>	Article (contenu autonome)
 
-	<aside>	Informations complémentaires
+	<aside>		Informations complémentaires
 
 ## Balises génériques
 
@@ -199,7 +199,7 @@ Il y a deux balises génériques : l'une est inline, l'autre est block.
 
 ### Balise		### Description
 
-	<span>	Balise générique de type inline
+	<span>		Balise générique de type inline
 
 	<div>		Balise générique de type block
 
