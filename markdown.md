@@ -66,7 +66,7 @@ Quand il y avait plusieurs syntaxes possibles, j'ai volontairement choisi seulem
 		{
 			printf("Hello world!\n");
         		return 0;
-    		}
+    	}
 
 ### Code en ligne
 
