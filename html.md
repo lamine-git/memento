@@ -5,7 +5,7 @@ voici un petit condensé de balises html
 
 Les balises de premier niveau sont les principales balises qui structurent une page HTML. Elles sont indispensables pour réaliser le « code minimal » d'une page web.
 
-#Balise	#Description
+# Balise	Description
 
 '<'html'>'	Balise pricipale 
 
@@ -27,11 +27,11 @@ Code minimal d'une page HTML:
     			</body>
 		</html>
 
-##Balises d'en-tête
+## Balises d'en-tête
 
 Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entre 	<head>  et 	</head>  :
 
-===balise	===Description
+### balise		Description
 
 	<link/>	Liaison avec une feuille de style
 
@@ -43,9 +43,9 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<title>	Titre de la page
 
-==Balises de structuration du texte
+## Balises de structuration du texte
 
-===balise	Description
+### balise		Description
 
 	<abbr>		Abreviation
 
@@ -53,12 +53,12 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<cite>		Citation du titre d'une oeuvre ou d'un evenement
 
-	<q>			Citation (courte)
+	<q>		Citation (courte)
 
-	<sub>    		indice
+	<sub>		indice
 
 	<Strong>		Mise en valeur forte
 
-	<em>			Mise en valeur normal
+	<em>		Mise en valeur normal
 
 	
