@@ -31,7 +31,7 @@ Code minimal d'une page HTML:
 
 Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entre 	<head>  et 	</head>  :
 
-##balise	Description
+===balise	===Description
 
 	<link/>	Liaison avec une feuille de style
 
@@ -43,22 +43,22 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<title>	Titre de la page
 
-##Balises de structuration du texte
+==Balises de structuration du texte
 
-###balise	Description
+===balise	Description
 
-	<abbr>	Abreviation
+	<abbr>		Abreviation
 
 	<blockquote>	Citation(longue)
 
-	<cite>	Citation du titre d'une oeuvre ou d'un evenement
+	<cite>		Citation du titre d'une oeuvre ou d'un evenement
 
-	<q>	Citation (courte)
+	<q>			Citation (courte)
 
-	<sub>    indice
+	<sub>    		indice
 
-	<Strong>	Mise en valeur forte
+	<Strong>		Mise en valeur forte
 
-	<em>	Mise en valeur normal
+	<em>			Mise en valeur normal
 
 	
