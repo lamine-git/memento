@@ -29,12 +29,20 @@ le fait d'ajouter btn btn-rounded ... permet de reutiliser les .btn par exemple 
 * Au-delà du nesting, les préprocesseurs vous permettent d’utiliser des fonctionnalités de programmation pour créer une codebase plus maintenable, tout en diminuant les énormes quantités de code à écrire.
 
 Exemple de **Nesting**
+
     ul {
         list-style: none;
+
         text-align: right;
+
         li {
+
             display: inline;
+
             font-size: 3rem;
+
             color: #D6FFF5;
+
         }
+
     }
