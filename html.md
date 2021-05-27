@@ -1,9 +1,10 @@
+<meta charset="UTF-8">
 # Memento de HTML
-voici un petit condensé de balises html
+voici un petit condensï¿½ de balises html
 
 # Balises de premier niveau
 
-Les balises de premier niveau sont les principales balises qui structurent une page HTML. Elles sont indispensables pour réaliser le « code minimal » d'une page web.
+Les balises de premier niveau sont les principales balises qui structurent une page HTML. Elles sont indispensables pour rï¿½aliser le ï¿½ code minimal ï¿½ d'une page web.
 
 ### Balise	Description
 
@@ -27,15 +28,15 @@ Code minimal d'une page HTML:
     		</body>
 		</html>
 
-## Balises d'en-tête
+## Balises d'en-tï¿½te
 
-Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entre 	<head>  et 	</head>  :
+Ces balises sont toutes situï¿½es dans l'en-tï¿½te de la page web, c'est-ï¿½-dire entre 	<head>  et 	</head>  :
 
 ### balise		Description
 
 	<link/>		Liaison avec une feuille de style
 
-	<meta/>		Métadonnées de la page web (charset, mots-clés, etc.)
+	<meta/>		Mï¿½tadonnï¿½es de la page web (charset, mots-clï¿½s, etc.)
 
 	<script>	Code JavaScript
 
@@ -83,13 +84,13 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<audio>		Son
 
-	<video>		Vidéo
+	<video>		Vidï¿½o
 
 	<source>	Format source pour les balises <audio>
 
 	<a>		Lien hypertexte
 
-	<br />		Retour à la ligne
+	<br />		Retour ï¿½ la ligne
 
 	<p>		Paragraphe
 
@@ -97,15 +98,15 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 	<address>	Adresse de contact
 
-	<del>		Texte supprimé
+	<del>		Texte supprimï¿½
 
-	<ins>		Texte inséré
+	<ins>		Texte insï¿½rï¿½
 
 	<dfn>		Definition
 
 	<kbd>		Saisie clavier
 
-	<pre>		Affichage formaté (pour les codes sources)
+	<pre>		Affichage formatï¿½ (pour les codes sources)
 
 	<progress>	Barre de progression
 
@@ -113,19 +114,19 @@ Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entr
 
 ## Balises de listes
 
-cette section énumère toutes les balises HTML permettant de créer des listes (listes à puces, listes numerotées, listes de définitions...)
+cette section ï¿½numï¿½re toutes les balises HTML permettant de crï¿½er des listes (listes ï¿½ puces, listes numerotï¿½es, listes de dï¿½finitions...)
 
 ### Balise		### Description
 
-	<ul>		liste à puces, non numérotée
+	<ul>		liste ï¿½ puces, non numï¿½rotï¿½e
 
-	<ol>		liste numérotéz
+	<ol>		liste numï¿½rotï¿½z
 
-	<li>		élément de la liste à puces
+	<li>		ï¿½lï¿½ment de la liste ï¿½ puces
 
-	<dl>		Terme à définir
+	<dl>		Terme ï¿½ dï¿½finir
 
-	<dd>		Définition du terme
+	<dd>		Dï¿½finition du terme
 
 ## Balises de tableau
 
@@ -158,17 +159,17 @@ cette section énumère toutes les balises HTML permettant de créer des listes (li
 
 	<legend>	Titre d'un groupe de champs
 
-	<label>		Libellé d'un champ
+	<label>		Libellï¿½ d'un champ
 
-	<input />	Champ de formulaire (texte, mot de passe, case à cocher, bouton, etc.)
+	<input />	Champ de formulaire (texte, mot de passe, case ï¿½ cocher, bouton, etc.)
 
 	<textarea>	Zone de saisie multiligne
 
-	<select>	Liste déroulante
+	<select>	Liste dï¿½roulante
 
-	<option>	Élément d'une liste déroulante
+	<option>	ï¿½lï¿½ment d'une liste dï¿½roulante
 
-	<optgroup>	Groupe d'éléments d'une liste déroulante
+	<optgroup>	Groupe d'ï¿½lï¿½ments d'une liste dï¿½roulante
 
 ## Balises sectionnantes
 
@@ -176,7 +177,7 @@ Ces balises permettent de construire le squelette de notre site web.
 
 ### Balise		### Description
 
-	<header>	En-tête
+	<header>	En-tï¿½te
 
 	<nav>		Liens principaux de navigation
 
@@ -186,32 +187,32 @@ Ces balises permettent de construire le squelette de notre site web.
 
 	<article>	Article (contenu autonome)
 
-	<aside>		Informations complémentaires
+	<aside>		Informations complï¿½mentaires
 
-## Balises génériques
+## Balises gï¿½nï¿½riques
 
-Les balises génériques sont des balises qui n'ont pas de sens sémantique.
+Les balises gï¿½nï¿½riques sont des balises qui n'ont pas de sens sï¿½mantique.
 
-En effet, toutes les autres balises HTML ont un sens : '<'p'>'  signifie « paragraphe », '<'h2'>'  signifie « sous-titre », etc.
-Parfois, on a besoin d'utiliser des balises génériques (aussi appelées *balises universelles*) car aucune des autres balises ne convient. On utilise le plus souvent des balises génériques pour construire son design.
+En effet, toutes les autres balises HTML ont un sens : '<'p'>'  signifie ï¿½ paragraphe ï¿½, '<'h2'>'  signifie ï¿½ sous-titre ï¿½, etc.
+Parfois, on a besoin d'utiliser des balises gï¿½nï¿½riques (aussi appelï¿½es *balises universelles*) car aucune des autres balises ne convient. On utilise le plus souvent des balises gï¿½nï¿½riques pour construire son design.
 
-Il y a deux balises génériques : l'une est inline, l'autre est block.
+Il y a deux balises gï¿½nï¿½riques : l'une est inline, l'autre est block.
 
 ### Balise		### Description
 
-	<span>		Balise générique de type inline
+	<span>		Balise gï¿½nï¿½rique de type inline
 
-	<div>		Balise générique de type block
+	<div>		Balise gï¿½nï¿½rique de type block
 
-Ces balises ont un intérêt uniquement si vous leur associez un attribut	class  , 	id  ou 	style  :
+Ces balises ont un intï¿½rï¿½t uniquement si vous leur associez un attribut	class  , 	id  ou 	style  :
 
-* class  : indique le nom de la classe CSS à utiliser.
+* class  : indique le nom de la classe CSS ï¿½ utiliser.
 
-* id  : donne un nom à la balise. Ce nom doit être unique sur toute la page car il permet d'identifier la balise. Vous pouvez vous servir de l'ID pour de nombreuses choses, par exemple pour créer un lien vers une ancre, pour un style CSS de type ID, pour des manipulations en JavaScript, etc.
+* id  : donne un nom ï¿½ la balise. Ce nom doit ï¿½tre unique sur toute la page car il permet d'identifier la balise. Vous pouvez vous servir de l'ID pour de nombreuses choses, par exemple pour crï¿½er un lien vers une ancre, pour un style CSS de type ID, pour des manipulations en JavaScript, etc.
 
-* style  : cet attribut vous permet d'indiquer directement le code CSS à appliquer. Vous n'êtes donc pas obligé d'avoir une feuille de style à part, vous pouvez mettre directement les attributs CSS. Notez qu'il est préférable de ne pas utiliser cet attribut et de passer à la place par une feuille de style externe, car cela rend votre site plus facile à mettre à jour par la suite.
+* style  : cet attribut vous permet d'indiquer directement le code CSS ï¿½ appliquer. Vous n'ï¿½tes donc pas obligï¿½ d'avoir une feuille de style ï¿½ part, vous pouvez mettre directement les attributs CSS. Notez qu'il est prï¿½fï¿½rable de ne pas utiliser cet attribut et de passer ï¿½ la place par une feuille de style externe, car cela rend votre site plus facile ï¿½ mettre ï¿½ jour par la suite.
 
-Ces trois attributs ne sont pas réservés aux balises génériques : vous pouvez aussi les utiliser sans aucun problème dans la plupart des autres balises.
+Ces trois attributs ne sont pas rï¿½servï¿½s aux balises gï¿½nï¿½riques : vous pouvez aussi les utiliser sans aucun problï¿½me dans la plupart des autres balises.
 
 
 	
