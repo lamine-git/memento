@@ -32,10 +32,10 @@ Exemple de **Nesting**
 
     ul {
         list-style: none;
-        text-align: right;
-        li {
-            display: inline;
-            font-size: 3rem;
-            color: #D6FFF5;
-        }
+        text-align: right;
+        li {
+            display: inline;
+            font-size: 3rem;
+            color: #D6FFF5;
+        }
     }
