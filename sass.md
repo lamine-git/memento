@@ -161,15 +161,11 @@ Nous obtenons un CSS compilé parfaitement conforme avec ce que nous voulions :
     }
 
 Nous utilisons l’esperluette pour créer deux sélecteurs distincts. Le premier est un **modificateur standard**
-
     btn--disabled
 , qui outrepassera la couleur de fond de
-
     .btn
 pour la mettre en gris. Le second est un **sélecteur** avec deux classes,
-
     .btn--outline
 et  
-
     btn--disabled
 , ce qui signifie que les deux classes doivent être appliquées afin que les règles que comporte ce sélecteur entrent en vigueur pour changer la couleur du contour en gris.
