@@ -481,7 +481,9 @@ Autre exemple
 À présent,  $palette  contient une map des valeurs de couleurs pour  bg,   border  et   txt  de l’état assigné
 
     @mixin txt-input-palette($state) {
-        $palette: map-get($txt-input-palette, $state);  border: .1rem solid map-get($palette, border);  background-color: map-get($palette, bg);
+        $palette: map-get($txt-input-palette, $state);
+        border: .1rem solid map-get($palette, border);
+        background-color: map-get($palette, bg);
         color: map-get($palette, txt);
     }
 
