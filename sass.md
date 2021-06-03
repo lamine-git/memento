@@ -352,11 +352,11 @@ Intégrons à présent notre nouvelle condition si/alors dans notre mixin headin
 
 # Utilisez le système 7-1 pour une codebase plus simple à gérer
 
-le directory **base/** contient les fichiers qui définissent les fondations de votre site, par exemple la police de caractères et les normes que vous voulez appliquer sur tout votre site, telles que le box-sizing ;
+le directory **base/** contient les fichiers qui définissent les fondations de votre site, par *exemple* *la police de caractères* et *les normes* que vous voulez appliquer sur tout votre site, telles que le *box-sizing* ;
 
-dans **utils/**, vous rangez vos variables, fonctions, mixins et les  %placeholders pour les extensions (si vous en utilisez) ;
+dans **utils/**, vous rangez vos *variables*, *fonctions*, *mixins* et les  *%placeholders* pour les extensions (si vous en utilisez) ;
 
-**layouts/** est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est réutilisable, par exemple un header pour les mises en page de grande taille ou un footer ;
+**layouts/** est le dossier où vous mettez vos *blocs BEM* qui contiennent ce qui est réutilisable, par *exemple* un *header* pour les mises en page de grande taille ou un *footer* ;
 
 **components/** est utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons.
 
@@ -364,6 +364,147 @@ Alors que **les *layouts* peuvent utiliser d’autres composants pour générer 
 
 **pages/** contient les blocs de code qui ne s’appliquent qu’à une seule page. Vous utilisez des boutons dans tout votre site, en revanche votre page d’accueil comporte une section Citation et une grille de projets qui ne sont employés nulle part ailleurs. En d’autres termes, **pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs** ;
 
-**themes/**, c’est ici que vous stockez le code thématique, par exemple un style customisé pour Noël ou pour l’été. On ne l’utilisera pas dans notre site ;
+**themes/**, c’est ici que vous stockez le *code thématique*, par *exemple* un *style customisé* pour Noël ou pour l’été. On ne l’utilisera pas dans notre site ;
 
 **vendors/** est un directory pour des feuilles de style externes comme Bootstrap ou jQuery UI. En gros, il s’utilise pour tout CSS venant de l’extérieur. Utiliser des frameworks comme Bootstrap permet d’accélérer le développement d’un site, car ils contiennent des feuilles de style prédéfinies pour des choses comme les formulaires ou des boutons.
+
+# Nettoyez et réorganisez vos fichiers
+
+D’une manière générale, pour éviter les erreurs, faites en sorte d’importer vos fichiers dans l’ordre suivant :
+
+1. Utils : 
+
+ 1. Variables.
+
+ 2. Fonctions.
+
+ 3. Mixins.
+
+ 4. Placeholders.
+
+2. Feuilles de style de tiers (vendors) (si vous en avez).
+
+3. Base:
+
+ 1. base.
+
+ 2. typography.
+
+4. Composants.
+
+ 1. buttons
+
+5. Layout.
+
+ 1. container
+
+ 2. form
+
+ 3. header
+
+ 4. nav
+
+6. Pages.
+
+7. Thèmes.
+
+# Intégrez les types de données Sass
+
+## Decouvrez les listes
+
+    $padding-dimensions: 1rem 2rem 3rem 4rem;
+    .block {
+        padding: $padding-dimensions;
+    }
+
+    $padding-dimensions  est ce que Sass appelle une liste ici une liste de valeurs.
+
+Regardons le CSS compilé
+
+    .block {
+        padding: 1rem 2rem 3rem 4rem;
+    }
+
+## Créez des maps
+
+### Exemple
+
+    $font-size: (logo:7rem, heading:5rem, project-heading:4rem, label:2rem);
+    .form{
+        &__field {
+            & label {
+                font-size: map-get($font-size, label);
+            }
+        }
+    }
+
+Le resultat CSS
+
+    .form__field label {
+        font-size: 2rem;
+    }
+
+Autre exemple
+
+    $colour-primary: #15DEA5;
+    $colour-secondary: #001534;
+    $colour-accent: #D6FFF5;
+    $colour-white: #fff;
+    $colour-invalid: #DB464B;
+    $txt-input-palette: (
+        active: (
+            bg: $colour-primary,
+            border: $colour-primary,
+            txt: $colour-white,
+        ),
+        focus: (
+            bg: $colour-primary,
+            border: $colour-primary,
+            txt: $colour-white,
+        ),
+        invalid: (
+            bg: $colour-invalid,
+            border: $colour-white,
+            txt: $colour-white,
+        )
+    );
+
+## Utilisez les mixins avec les maps
+
+    @mixin txt-input-palette($state) {
+        $palette: map-get($txt-input-palette, $state);
+        border: .1rem solid $border;
+        background-color: $bg;
+        color: $txt;
+    }
+
+À présent,  $palette  contient une map des valeurs de couleurs pour  bg,   border  et   txt  de l’état assigné
+
+    @mixin txt-input-palette($state) {
+        $palette: map-get($txt-input-palette, $state);  border: .1rem solid map-get($palette, border);  background-color: map-get($palette, bg);
+        color: map-get($palette, txt);
+    }
+
+Appliquons la mixin à votre sélecteur par défaut et inactif form__txt input  :
+
+    @mixin txt-input-palette($state) {
+    $palette: map-get($txt-input-palette, $state);
+    border: .1rem solid map-get($palette, border);  background-color: map-get($palette, bg);
+    color: map-get($palette, txt);
+    }
+    .form {
+        &__field {
+            & input {
+                @include txt-input-palette(focus);
+            }
+        }
+    }
+
+CSS compilé
+
+    .form__field input {
+        border: 0.1rem solid #15DEA5;
+        background-color: #001534;
+        color: #15DEA5;
+    }
+
