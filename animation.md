@@ -105,32 +105,33 @@ l’adresse e-mail est bien vérifiée pendant que l’utilisateur la tape. Mais
 ### ajouter une propriété transition au background-color
 
 En reprenant le meme exemple que precedemment
-$cd-txt: #6300a0;
-$cd-txt--invalid: #fff;
-$cd-danger: #b20a37;
-.form {
-&\_\_group {
-& input {
-border: 2px solid $cd-box;
-border-radius: 100rem;
-color: $cd-txt;
-font-family: 'Montserrat', sans-serif;
-font-size: 2.5rem;
-outline: none;
-padding: .5rem 1.5rem;
-width: 100%;
-transition: background-color 500ms;
-&:focus {
-border: 2px solid $cd-txt;
-}
-&:not(:focus):invalid {
-background-color: $cd-danger;
-border: 2px solid $cd-danger;
-color: $cd-txt--invalid;
-}
-}
-}
-}
+
+    $cd-txt: #6300a0;
+    $cd-txt--invalid: #fff;
+    $cd-danger: #b20a37;
+    .form {
+        &__group {
+            & input {
+                border: 2px solid $cd-box;
+                border-radius: 100rem;
+                color: $cd-txt;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.5rem;
+                outline: none;
+                padding: .5rem 1.5rem;
+                width: 100%;
+                transition: background-color 500ms;
+                &:focus {
+                    border: 2px solid $cd-txt;
+                }
+                &:not(:focus):invalid {
+                    background-color: $cd-danger;
+                    border: 2px solid $cd-danger;
+                    color: $cd-txt--invalid;
+                }
+            }
+        }
+    }
 
 ## Modifiez les éléments voisins avec les pseudoclasses
 
@@ -148,23 +149,24 @@ Mais vous pouvez également utiliser les pseudoclasses pour changer le style d�
     </body>
 
 On peut utiliser le combinateur d’adjacence pour combiner la pseudoclasse :hover avec l’élément .ball à la place :
-.btn {
-background: $cd-primary;
-font-size: 3rem;
-cursor: pointer;
-padding: 1.85rem 3rem;
-border-radius: 10rem;
-&:hover + .ball{
-transform: scale(1.15);
-}
-}
-.ball {
-width: $ball-size;
-height: $ball-size;
-background: $cd-secondary;
-margin-bottom: 1rem;
-border-radius: $ball-size \* 0.5;
-}
+
+    .btn {
+        background: $cd-primary;
+        font-size: 3rem;
+        cursor: pointer;
+        padding: 1.85rem 3rem;
+        border-radius: 10rem;
+        &:hover + .ball{
+            transform: scale(1.15);
+        }
+    }
+    .ball {
+        width: $ball-size;
+        height: $ball-size;
+        background: $cd-secondary;
+        margin-bottom: 1rem;
+        border-radius: $ball-size \* 0.5;
+    }
 
 Maintenant, c’est .ball qui va grossir lorsque l’utilisateur survolera le bouton avec sa souris.
 
