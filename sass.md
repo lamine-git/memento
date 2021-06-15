@@ -1,32 +1,36 @@
 ## le principe DRY
+
 c'est une abréviation en anglais signifiant “Don’t repeat yourself”. “Ne vous répétez pas !”
 
     < button class="btn btn-rounded btn-wide" >...</button>
+
 le fait d'ajouter btn btn-rounded ... permet de reutiliser les .btn par exemple ailleurs sur le site
 
 ## Créez des sélecteurs HTML avec la méthodologie BEM
-* BEM signifie bloc, élément, modificateur :
 
-    * les blocs sont des bouts de code autonomes ;
+- BEM signifie bloc, élément, modificateur :
 
-    * les éléments sont les parties qui forment le bloc ;
+  - les blocs sont des bouts de code autonomes ;
 
-    * les modificateurs changent l’apparence ou le comportement d’un bloc ou d’un élément.
+  - les éléments sont les parties qui forment le bloc ;
 
-* Les blocs sont nommés en fonction de leur rôle :
+  - les modificateurs changent l’apparence ou le comportement d’un bloc ou d’un élément.
 
-    * les éléments indiquent le nom de leur bloc parent, suivi d’un double underscore/dunder (__) puis du rôle de l’élément : form__label.
+- Les blocs sont nommés en fonction de leur rôle :
 
-* Les modificateurs utilisent le nom du bloc ou de l’élément qu’ils modifient, suivi de deux tirets (--) et de ce que le sélecteur modifie : button--green.
+  - les éléments indiquent le nom de leur bloc parent, suivi d’un double underscore/dunder (**) puis du rôle de l’élément : form**label.
 
-* Vous n’avez pas besoin d’attribuer à chaque élément d’une page web un sélecteur de classe. Vous pouvez utiliser les sélecteurs pour que votre code HTML soit plus propre et concis.
+- Les modificateurs utilisent le nom du bloc ou de l’élément qu’ils modifient, suivi de deux tirets (--) et de ce que le sélecteur modifie : button--green.
+
+- Vous n’avez pas besoin d’attribuer à chaque élément d’une page web un sélecteur de classe. Vous pouvez utiliser les sélecteurs pour que votre code HTML soit plus propre et concis.
 
 # Utilisez les préprocesseurs CSS pour des fonctionnalités avancées
-* Les préprocesseurs CSS vous permettent d’imbriquer votre code (on appelle ça le **nesting**) pour créer une hiérarchie plus facile à lire et regrouper des morceaux de code entre eux.
 
-* Il existe plein de préprocesseurs, mais le plus courant est Sass, qui signifie Syntactically Awesome Style Sheets (“Feuilles de style syntaxiquement fantastiques”).
+- Les préprocesseurs CSS vous permettent d’imbriquer votre code (on appelle ça le **nesting**) pour créer une hiérarchie plus facile à lire et regrouper des morceaux de code entre eux.
 
-* Au-delà du nesting, les préprocesseurs vous permettent d’utiliser des fonctionnalités de programmation pour créer une codebase plus maintenable, tout en diminuant les énormes quantités de code à écrire.
+- Il existe plein de préprocesseurs, mais le plus courant est Sass, qui signifie Syntactically Awesome Style Sheets (“Feuilles de style syntaxiquement fantastiques”).
+
+- Au-delà du nesting, les préprocesseurs vous permettent d’utiliser des fonctionnalités de programmation pour créer une codebase plus maintenable, tout en diminuant les énormes quantités de code à écrire.
 
 Exemple de **Nesting**
 
@@ -43,32 +47,36 @@ Exemple de **Nesting**
 # Utilisez les combinateurs
 
 ## Combinateur parent
+
     .parent {
         background-color: #15DEA5;
     }
 
 ## Combinateur descendant
+
     .parent .descendant {
         color: #fff;
     }
 
 ## Combinateur parent > enfant
+
     .parent > .child {
         color: #D6FFF5;
     }
 
 ## Combinateur adjacent
+
     .parent + .adjacent {
         color: #001534;
     }
 
-1. Dans le premier cas, tout ce qui est relié à l’élément parent adoptera la couleur de fond spécifiée. 
+1. Dans le premier cas, tout ce qui est relié à l’élément parent adoptera la couleur de fond spécifiée.
 
-2. Dans le deuxième cas, si le deuxième élément est le descendant du premier, alors il adoptera la couleur spécifiée. 
+2. Dans le deuxième cas, si le deuxième élément est le descendant du premier, alors il adoptera la couleur spécifiée.
 
 3. Dans le troisième cas, si le deuxième élément est un enfant du premier, alors il adoptera la couleur spécifiée.
 
-4. Dans le quatrième cas,  si le deuxième élément est immédiatement précédé du premier, alors il adoptera la couleur spécifiée.
+4. Dans le quatrième cas, si le deuxième élément est immédiatement précédé du premier, alors il adoptera la couleur spécifiée.
 
 ### En ajoutant le bon symbole de combinateur devant un sélecteur, vous pouvez créer tous les combinateurs CSS dans Sass :
 
@@ -87,7 +95,7 @@ Exemple de **Nesting**
 
 ## Utilisez l’esperluette
 
-Ajoutons donc une esperluette avant notre pseudosélecteur  :hover  :
+Ajoutons donc une esperluette avant notre pseudosélecteur :hover :
 
     ul {
         list-style: none;
@@ -183,7 +191,7 @@ Nous utilisons l’esperluette pour créer deux sélecteurs distincts. Le premie
 
 nommer la variable en fonction de son rôle
 
-exemple: 
+exemple:
 
     $color-primary (couleur principale en anglais)
 
@@ -236,9 +244,9 @@ Plutôt que de renseigner une valeur de couleur chaque fois que vous utilisez vo
         text-shadow: $shadow-size $shadow-size $colour;
     }
 
-* On utilise le mot clé  @mixin  pour déclarer une mixin.
+- On utilise le mot clé @mixin pour déclarer une mixin.
 
-* On utilise le mot clé  @include  pour placer une instance du mixin dans son code.
+- On utilise le mot clé @include pour placer une instance du mixin dans son code.
 
 # Écrivez du code plus propre grâce aux extensions Sass
 
@@ -277,7 +285,7 @@ Plutôt que de renseigner une valeur de couleur chaque fois que vous utilisez vo
         @extend %typography;
     }
 
-Pour éviter la présence de sélecteurs inutilisés dans votre codebase, vous pouvez utiliser des placeholders d’ensembles de règles en préfixant leur nom d’un symbole pourcent (%) :  %extend-placeholder 
+Pour éviter la présence de sélecteurs inutilisés dans votre codebase, vous pouvez utiliser des placeholders d’ensembles de règles en préfixant leur nom d’un symbole pourcent (%) : %extend-placeholder
 
 ### !!!!!!!!!!!!!!!!!!!!!!!! n’utilisez pas d’extensions mais plutot des mixins
 
@@ -289,9 +297,9 @@ Pour éviter la présence de sélecteurs inutilisés dans votre codebase, vous p
         text-shadow: $size $size darken($colour, 10%);
     }
 
-Nous avons remplacé $colour dans les arguments de text-shadow par la fonction  darken()  et avons passé $colour en premier argument, et la proportion dans laquelle nous voulons la rendre plus foncée en deuxième argument : ici 10 %.
+Nous avons remplacé $colour dans les arguments de text-shadow par la fonction darken() et avons passé $colour en premier argument, et la proportion dans laquelle nous voulons la rendre plus foncée en deuxième argument : ici 10 %.
 
-Quand vous regardez le CSS compilé, vous voyez que le mixin heading-shadow produit une ombre ayant la valeur hex  #11af82, soit une version 10 % plus foncée que $colour-primary (#15dea5) :
+Quand vous regardez le CSS compilé, vous voyez que le mixin heading-shadow produit une ombre ayant la valeur hex #11af82, soit une version 10 % plus foncée que $colour-primary (#15dea5) :
 
 # Optimisez les mixins grâce aux conditions dans Sass
 
@@ -302,9 +310,9 @@ Quand vous regardez le CSS compilé, vous voyez que le mixin heading-shadow prod
         $colour: darken($colour, 10%);
     }
 
-Du coup, si la condition est vraie et que la luminosité de $colour est inférieure à 25 %, on veut utiliser la fonction  lighten()  pour l’éclaircir de 10 %. Mais si l’instruction est fausse, alors on veut utiliser la fonction  darken()  pour l’assombrir de 10 %.
+Du coup, si la condition est vraie et que la luminosité de $colour est inférieure à 25 %, on veut utiliser la fonction lighten() pour l’éclaircir de 10 %. Mais si l’instruction est fausse, alors on veut utiliser la fonction darken() pour l’assombrir de 10 %.
 
-Intégrons à présent notre nouvelle condition si/alors dans notre mixin heading-shadow  :
+Intégrons à présent notre nouvelle condition si/alors dans notre mixin heading-shadow :
 
     @mixin heading-shadow($colour: $colour-primary, $size: $heading-shadow-size){
         @if ( lightness($colour) < 25% ) {
@@ -352,19 +360,19 @@ Intégrons à présent notre nouvelle condition si/alors dans notre mixin headin
 
 # Utilisez le système 7-1 pour une codebase plus simple à gérer
 
-le directory **base/** contient les fichiers qui définissent les fondations de votre site, par *exemple* *la police de caractères* et *les normes* que vous voulez appliquer sur tout votre site, telles que le *box-sizing* ;
+le directory **base/** contient les fichiers qui définissent les fondations de votre site, par _exemple_ _la police de caractères_ et _les normes_ que vous voulez appliquer sur tout votre site, telles que le _box-sizing_ ;
 
-dans **utils/**, vous rangez vos *variables*, *fonctions*, *mixins* et les  *%placeholders* pour les extensions (si vous en utilisez) ;
+dans **utils/**, vous rangez vos _variables_, _fonctions_, _mixins_ et les _%placeholders_ pour les extensions (si vous en utilisez) ;
 
-**layouts/** est le dossier où vous mettez vos *blocs BEM* qui contiennent ce qui est réutilisable, par *exemple* un *header* pour les mises en page de grande taille ou un *footer* ;
+**layouts/** est le dossier où vous mettez vos _blocs BEM_ qui contiennent ce qui est réutilisable, par _exemple_ un _header_ pour les mises en page de grande taille ou un _footer_ ;
 
 **components/** est utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons.
 
-Alors que **les *layouts* peuvent utiliser d’autres composants pour générer leurs contenus**, les **composants**, eux, sont plus élémentaires. Par exemple, un **formulaire doit être considéré comme un layout** : la mise en page est une fonction vitale du bloc et il utilise d’autres blocs pour fonctionner,  comme des boutons. En revanche, le **bouton lui-même est un composant** car il n’a besoin d’aucun autre composant pour remplir sa fonction ;
+Alors que **les _layouts_ peuvent utiliser d’autres composants pour générer leurs contenus**, les **composants**, eux, sont plus élémentaires. Par exemple, un **formulaire doit être considéré comme un layout** : la mise en page est une fonction vitale du bloc et il utilise d’autres blocs pour fonctionner, comme des boutons. En revanche, le **bouton lui-même est un composant** car il n’a besoin d’aucun autre composant pour remplir sa fonction ;
 
 **pages/** contient les blocs de code qui ne s’appliquent qu’à une seule page. Vous utilisez des boutons dans tout votre site, en revanche votre page d’accueil comporte une section Citation et une grille de projets qui ne sont employés nulle part ailleurs. En d’autres termes, **pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs** ;
 
-**themes/**, c’est ici que vous stockez le *code thématique*, par *exemple* un *style customisé* pour Noël ou pour l’été. On ne l’utilisera pas dans notre site ;
+**themes/**, c’est ici que vous stockez le _code thématique_, par _exemple_ un _style customisé_ pour Noël ou pour l’été. On ne l’utilisera pas dans notre site ;
 
 **vendors/** est un directory pour des feuilles de style externes comme Bootstrap ou jQuery UI. En gros, il s’utilise pour tout CSS venant de l’extérieur. Utiliser des frameworks comme Bootstrap permet d’accélérer le développement d’un site, car ils contiennent des feuilles de style prédéfinies pour des choses comme les formulaires ou des boutons.
 
@@ -372,41 +380,41 @@ Alors que **les *layouts* peuvent utiliser d’autres composants pour générer 
 
 D’une manière générale, pour éviter les erreurs, faites en sorte d’importer vos fichiers dans l’ordre suivant :
 
-1. Utils : 
+1. Utils :
 
- 1. Variables.
+1. Variables.
 
- 2. Fonctions.
+1. Fonctions.
 
- 3. Mixins.
+1. Mixins.
 
- 4. Placeholders.
+1. Placeholders.
 
-2. Feuilles de style de tiers (vendors) (si vous en avez).
+1. Feuilles de style de tiers (vendors) (si vous en avez).
 
-3. Base:
+1. Base:
 
- 1. base.
+1. base.
 
- 2. typography.
+1. typography.
 
-4. Composants.
+1. Composants.
 
- 1. buttons
+1. buttons
 
-5. Layout.
+1. Layout.
 
- 1. container
+1. container
 
- 2. form
+1. form
 
- 3. header
+1. header
 
- 4. nav
+1. nav
 
-6. Pages.
+1. Pages.
 
-7. Thèmes.
+1. Thèmes.
 
 # Intégrez les types de données Sass
 
@@ -478,7 +486,7 @@ Autre exemple
         color: $txt;
     }
 
-À présent,  $palette  contient une map des valeurs de couleurs pour  bg,   border  et   txt  de l’état assigné
+À présent, $palette contient une map des valeurs de couleurs pour bg, border et txt de l’état assigné
 
     @mixin txt-input-palette($state) {
         $palette: map-get($txt-input-palette, $state);
@@ -487,7 +495,7 @@ Autre exemple
         color: map-get($palette, txt);
     }
 
-Appliquons la mixin à votre sélecteur par défaut et inactif form__txt input  :
+Appliquons la mixin à votre sélecteur par défaut et inactif form\_\_txt input :
 
     @mixin txt-input-palette($state) {
     $palette: map-get($txt-input-palette, $state);
@@ -509,4 +517,3 @@ CSS compilé
         background-color: #001534;
         color: #15DEA5;
     }
-
