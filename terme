@@ -1,0 +1,23 @@
+patern 7-1: mode de conception
+sass 
+packegejson c'est la recette permet de voir toute les librairies
+node c'est le restaurant
+
+NPM: node package manager permet de gerer les paquets ou les librairies
+
+NODEJS: est une technologie qui permet d'executer des scriptes coté serveur et d'effectuer differentes operations
+        c'est un nouveau language qui permet d'interagire avec le systeme au meme titre que rubi python ou autre
+
+JSON: JavaScript Object Notation (JSON) est un format de 
+données textuelles dérivé de la notation des objets du 
+langage JavaScript. Il comprend deux types d'element structurel
+des ensembles de paires <<nom>> (alias <<clé>>)/<<valeur>>
+et des liste ordonnées de valeur(objet tableau...)
+
+PACKAGEJSON: est un fichier JSON qui existe à la racine d'un 
+projet JavaScript/node. Il contient des metadonnées 
+pertinentes pour le projetel il est utilisé pour 
+gerer les dependances du projet, les scripts, 
+la version et bien plus encore. Il stocke des informations 
+sur votre projet, de la meme maniere que la sectio <head>
+ d'un document HTML decrit le contenu d'une page Web.
