@@ -74,3 +74,11 @@ elt.getAttribute("name"); // Retourne my-password
 ### remplacer
 
     parentNode.replaceChild(<newElement>, <oldElement>)
+
+# Écoutez des événements
+
+## Réagissez lors d'un clic sur un élément
+
+    addEventListner(<eventt>, <callback>)  // event=nom de l'even... a ecouter; callback=fonction à appeler
+
+[doc](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener)
